@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Figma</title>
+</head>
+<style>
+    .header {
+        display: flex;
+        justify-content: space-around;
+        background-color: blue;
+        gap: 20px;
+        padding: 10px
+    }
+
+    header a {
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+    }
+
+    .right-section {
+        position: relative;
+    }
+    .inner-container{
+        position: relative;
+        display: inline-block;
+        top: 3px;
+    }
+    .inner-container span{
+        position: relative;
+        padding-left: 34px;
+    }
+    .inner-container span::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: red;
+    transform: translateY(-50%);
+}
+.number-section{
+    position: absolute;
+    top: 3px
+}
+</style>
+
+<body>
+    <div class="main">
+        <header class="header">
+
+            <div class="nav-logo">
+                <a href="/">MNTN</a>
+            </div>
+            <nav class="header">
+                <a href="/">Equipment</a>
+                <a href="/">About us </a>
+                <a href="/">Blog</a>
+            </nav>
+            <div>
+                <a href="/">Account</a>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="right-section">
+                    <span class="number-section">01</span>
+                    <div class="inner-container">
+                        <span>Get Started</span>
+                        <h2>
+                            What level of hiker are you?
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
